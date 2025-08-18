@@ -1,0 +1,92 @@
+/*colores: #201a8f
+#f3fbff
+tipografia: Poiret Uno*/
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*--------------------encabezado*/
+header{
+    background-color: #201a8f;
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: sticky;/*--quieto el nav*/
+    top: 0px ;
+}
+
+nav{
+    width: 30%;
+}
+
+.nav{
+    height: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 10px;
+}
+
+header a{
+    color: white;
+    text-decoration: none;
+}
+
+.logo{
+    width: 170px;
+    margin-top: 15px;
+}
+
+/*--------------------main (cuerpo)*/
+body{
+    background-color:#f3fbff ;
+}
+
+.titulo{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.destacado{
+    text-align: center;
+}
+
+.iconos{
+    display: flex;
+    justify-content:space-evenly ;
+    margin: 30px 0px;
+    text-align: center;
+}
+
+section img{
+    width: 200px;
+}
+
+main{
+    background-color: orange;
+    font-family: "Poiret One", sans-serif;
+    margin: 10px;
+}
+
+p{
+    margin: 10px;
+}
+
+h2{
+    margin: 20px;
+    text-align: center;
+}
+
+
+/*--------------------pie de página*/
+footer{
+    background-color: #201a8f;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+}

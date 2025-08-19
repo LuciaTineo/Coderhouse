@@ -8,7 +8,14 @@ tipografia: Poiret Uno*/
     padding: 0;
     box-sizing: border-box;
 }
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Poiret One", sans-serif !important;
+    font-weight: bold;
+}
+
 /*--------------------encabezado*/
+
 header{
     background-color: #201a8f;
     height: 90px;
@@ -30,6 +37,8 @@ nav{
     justify-content: space-between;
     align-items: center;
     margin-right: 10px;
+    font-family: "Poiret One", sans-serif !important;
+    font-weight: bold;
 }
 
 header a{
@@ -45,6 +54,7 @@ header a{
 /*--------------------main (cuerpo)*/
 body{
     background-color:#f3fbff ;
+    font-family: "Poiret One", sans-serif;
 }
 
 .titulo{
@@ -68,7 +78,6 @@ section img{
 }
 
 main{
-    background-color: orange;
     font-family: "Poiret One", sans-serif;
     margin: 10px;
 }

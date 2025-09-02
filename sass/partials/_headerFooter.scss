@@ -1,0 +1,50 @@
+@use "variables" as *;
+/*--------------------encabezado*/
+header {
+  .mi-clase {
+    background-color: $color;
+    padding: 10px 20px;
+
+    .navbar-brand {
+      .logo {
+        width: 100px;
+        height: auto;
+      }
+    }
+
+    .navbar-toggler {
+      border: none;
+
+      &:focus {
+        box-shadow: none;
+      }
+    }
+
+    .navbar-nav {
+      .nav-link {
+        font-family: $font-family-base;
+        font-weight: bold;
+        color: white;
+
+        &:hover {
+          color: darken($color, 10%);
+        }
+
+        &.active {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+/*--------------------final encabezado*/
+
+/*--------------------pie de página*/
+footer {
+  background-color: $color;
+  color: white;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/*--------------------final de página*/

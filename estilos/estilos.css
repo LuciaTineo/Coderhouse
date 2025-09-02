@@ -1,0 +1,91 @@
+@charset "UTF-8";
+/*--------------------encabezado*/
+header .mi-clase {
+  background-color: #201a8f;
+  padding: 10px 20px;
+}
+header .mi-clase .navbar-brand .logo {
+  width: 100px;
+  height: auto;
+}
+header .mi-clase .navbar-toggler {
+  border: none;
+}
+header .mi-clase .navbar-toggler:focus {
+  box-shadow: none;
+}
+header .mi-clase .navbar-nav .nav-link {
+  font-family: "Poiret One", sans-serif;
+  font-weight: bold;
+  color: white;
+}
+header .mi-clase .navbar-nav .nav-link:hover {
+  color: rgb(22.3431952663, 18.1538461538, 99.8461538462);
+}
+header .mi-clase .navbar-nav .nav-link.active {
+  text-decoration: underline;
+}
+
+/*--------------------final encabezado*/
+/*--------------------pie de página*/
+footer {
+  background-color: #201a8f;
+  color: white;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/*--------------------final de página*/
+body {
+  background-color: #f3fbff;
+  font-family: "Poiret One", sans-serif;
+}
+
+.mi-menu {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 100px;
+  padding: 20px;
+  height: 100%;
+  flex-wrap: wrap;
+  font-size: 1em;
+  text-align: center;
+}
+
+.titulo {
+  text-align: center;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.mi-compra {
+  width: 100%;
+  padding: 5%;
+}
+
+.iconos {
+  position: relative;
+  width: 300px;
+  display: block;
+  margin: 0 auto;
+}
+
+.contenedor {
+  position: static !important;
+  text-align: center;
+  width: 80%;
+  margin: 16px auto 0;
+  padding: 16px 20px;
+}
+
+section img {
+  width: 200px;
+}
+
+main {
+  font-family: "Poiret One", sans-serif;
+  margin: 10px;
+}
+
+/*# sourceMappingURL=estilos.css.map */

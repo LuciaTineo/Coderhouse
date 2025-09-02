@@ -1,0 +1,56 @@
+@use "variables" as *;
+
+
+body {
+  background-color: $background-color;
+  font-family: $font-family-base;
+}
+
+.mi-menu {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 100px;
+  padding: 20px;
+  height: 100%;
+  flex-wrap: wrap;
+  font-size: 1em;
+  text-align: center;
+}
+
+.titulo {
+  text-align: center;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.mi-compra {
+  width: 100%;
+  padding: 5%;
+}
+
+.iconos {
+  position: relative;
+  width: 300px;
+  display: block;
+  margin: 0 auto; // ✅ Esto la centra
+}
+
+.contenedor {
+  position: static !important; // siempre debajo de la imagen
+  text-align: center;
+  width: 80%;
+  margin: 16px auto 0;
+  padding: 16px 20px;
+}
+
+section {
+  img {
+    width: 200px;
+  }
+}
+
+main {
+  font-family: $font-family-base;
+  margin: 10px;
+}

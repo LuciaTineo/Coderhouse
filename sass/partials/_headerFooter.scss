@@ -7,7 +7,7 @@ header {
 
     .navbar-brand {
       .logo {
-        width: 100px;
+        max-width: 20%;
         height: auto;
       }
     }
@@ -18,9 +18,19 @@ header {
       &:focus {
         box-shadow: none;
       }
+
+      &:focus-visible {
+      outline: 2px solid white; // accesibilidad
+      outline-offset: 2px;
+      }
+
     }
 
     .navbar-nav {
+      display: flex;
+      flex-wrap: wrap; 
+      gap: 8px;
+
       .nav-link {
         font-family: $font-family-base;
         font-weight: bold;
@@ -44,7 +54,9 @@ footer {
   background-color: $color;
   color: white;
   text-align: center;
+  font-weight: bold;
   margin-top: 10px;
+  padding: 16px 0;
 }
 
 /*--------------------final de página*/

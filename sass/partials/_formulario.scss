@@ -1,0 +1,56 @@
+@use "variables" as *;
+
+// Mixin para contenedor visual del formulario
+@mixin bloque-contenedor($fondo: lighten($color, 35%)) {
+  background-color: $fondo;
+  padding: 32px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+// Placeholder para botón base
+%boton-base {
+  padding: 10px 24px;
+  font-weight: bold;
+  border-radius: 6px;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+// Estilos del formulario de contacto
+form {
+  @include bloque-contenedor;
+
+  label {
+    font-weight: bold;
+    color: darken($color, 20%);
+  }
+
+  .form-control,
+  .form-check-input {
+    border-radius: 6px;
+    border: 1px solid lighten($color, 40%);
+    transition: border-color 0.3s ease;
+
+    &:focus {
+      border-color: $color;
+      box-shadow: 0 0 0 0.2rem rgba($color, 0.25);
+    }
+  }
+
+  .form-check-label {
+    color: darken($color, 10%);
+  }
+
+  button[type="submit"] {
+    @extend %boton-base;
+    background-color: $color;
+    color: white;
+
+    &:hover {
+      background-color: darken($color, 10%);
+    }
+  }
+}

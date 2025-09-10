@@ -31,22 +31,46 @@ body {
 
 .iconos {
   position: relative;
-  width: 300px;
+  width: clamp(150px, 80%, 300px);
   display: block;
-  margin: 0 auto; // ✅ Esto la centra
+  margin: 0 auto;
+}
+
+.slide-contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: translateY(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.carousel-item {
+  &.active .slide-contenedor {
+    animation: zoomIn 1s ease-out;
+  }
 }
 
 .contenedor {
-  position: static !important; // siempre debajo de la imagen
   text-align: center;
   width: 80%;
   margin: 16px auto 0;
   padding: 16px 20px;
 }
 
+
 section {
   img {
-    width: 200px;
+    max-width: 100%;
+    height: auto;
   }
 }
 

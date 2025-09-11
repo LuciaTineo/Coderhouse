@@ -18,30 +18,48 @@
 <body>
     <!--encabezado-->
     <header>
-    <nav class="navbar navbar-expand-lg mi-clase">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html"><img src="./imagenes/logo.jpg" alt="Logo" class="logo"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                    <a class="nav-link" href="./paginas/menu.htm">Menú</a>
-                    <a class="nav-link" href="./paginas/compra.html">Cómo comprar</a>
-                    <a class="nav-link" href="./paginas/contacto.html">Contacto</a>
+        <nav class="navbar navbar-expand-lg mi-clase">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="./imagenes/logo.jpg" alt="Logo" class="logo">
+                </a>
+                <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <div class="navbar-nav text-end">
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        <a class="nav-link" href="./paginas/menu.htm">Menú</a>
+                        <a class="nav-link" href="./paginas/compra.html">Cómo comprar</a>
+                        <a class="nav-link" href="./paginas/contacto.html">Contacto</a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </nav>
+        </nav>
     </header>
 
     <main>
-        <h1 class="titulo">Pastas frescas artesanales, hechas por pedido</h1>
-
+        <h1 class="titulo">Pastas frescas artesanales</h1>
         <h2>
             Ravioles, sorrentinos, fettuccine y más. Ingredientes de estación, masa al huevo y sabor casero.
         </h2>
+
+        <div class="container text-center galeria">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+                <div class="col">
+                    <img src="./imagenes/pastalinda.png" alt="">
+                </div>
+                <div class="col">
+                    <img src="./imagenes/mix.png" alt="">
+                </div>
+                <div class="col">
+                    <img src="./imagenes/plato.png" alt="">
+                </div>
+                <div class="col">
+                    <img src="./imagenes/pastas.png" alt="">
+                </div>
+            </div>
+        </div>
 
     </main>
     
